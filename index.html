@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/">
+
+    <!-- Primary Meta Tags -->
+    <title>Hello, world</title>
+    <meta name="description" content="">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+
+    <link href="./dist/bundle.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- lightCountdown -->
+    <!-- <div class="lightcountdown"></div> -->
+    <!-- /.lightCountdown -->
+
+    <!-- font-awesome -->
+    <!-- <i class="fas fa-percent"></i> -->
+
+    <!-- calculator -->
+    <form class="calculator" style="width: 500px; margin: 50px auto 0;">
+        <input type="hidden" value="product_1" name="product">
+        <div class="calculator__item">
+            <h4 class="calculator__item-title">Длина, м.:</h4>
+            <div class="calculator__item-box">
+                <label>
+                    <input name="length" type="radio" value="4" checked>
+                    <span class="calculator__item-span">4</span>
+                </label>
+                <label>
+                    <input name="length" type="radio" value="6">
+                    <span class="calculator__item-span">6</span>
+                </label>
+                <label>
+                    <input name="length" type="radio" value="8">
+                    <span class="calculator__item-span">8</span>
+                </label>
+                <label>
+                    <input name="length" type="radio" value="10">
+                    <span class="calculator__item-span">10</span>
+                </label>
+            </div>
+        </div>
+        <div class="calculator__item">
+            <h4 class="calculator__item-title">Шаг, м.:</h4>
+            <div class="calculator__item-box">
+                <label>
+                    <input name="interval" type="radio" value="1" checked>
+                    <span class="calculator__item-span">1</span>
+                </label>
+                <label>
+                    <input name="interval" type="radio" value="0.67">
+                    <span class="calculator__item-span">0.67</span>
+                </label>
+                <label>
+                    <input name="interval" type="radio" value="0.5">
+                    <span class="calculator__item-span">0.5</span>
+                </label>
+            </div>
+        </div>
+        <div class="calculator__item calculator__price-wrap">
+            <div class="calculator__price price-block">
+                <div class="calculator__price-start">
+                    <span class="calculator__price-old calculator-price-old"></span>
+                    <span class="calculator__price-old-currency">руб.</span> 
+                    <div class="calculator__price-discount">-17%</div>
+                </div>
+                <div class="calculator__price-end">
+                    от <span class="calculator__price-new calculator-price-new"></span>
+                    <span class="calculator__price-new-currency">руб.</span> 
+                </div>
+            </div>
+            <button class="btn calculator__modal-btn" type="button">
+                <span class="calculator__modal-span">Подробнее</span>
+                <svg class="calculator__modal-icon" xmlns="http://www.w3.org/2000/svg" width="15" height="13.5" viewBox="0 0 20 18.4" data-svg="right" fill="#fff">
+                    <path d="M12.2.4l7.5 7.9a1.3 1.3 0 0 1 0 1.8L12.2 18c-1.1 1.1-2.8-.6-1.7-1.8l5.5-5.8H0V8h16l-5.5-5.8C9.4 1 11.1-.8 12.2.4z"></path>
+                </svg>
+            </button>
+        </div>
+        <div class="calculator__item calculator__callback-wrap">
+            <input class="calculator__callback-input" type="text" placeholder="Ваше имя" required>
+            <button class="btn calculator__callback-btn" type="submit">
+                <span class="calculator__callback-span">Купить</span>
+                <svg class="calculator__callback-icon" xmlns="http://www.w3.org/2000/svg" width="15" height="13.5" viewBox="0 0 20 18.4" data-svg="right" fill="#545454">
+                    <path d="M12.2.4l7.5 7.9a1.3 1.3 0 0 1 0 1.8L12.2 18c-1.1 1.1-2.8-.6-1.7-1.8l5.5-5.8H0V8h16l-5.5-5.8C9.4 1 11.1-.8 12.2.4z"></path>
+                </svg>
+            </button>
+        </div>
+    </form>
+    <!-- /.calculator -->
+
+    <script src="./assets/js/calcData.js"></script>
+    <script src="./dist/bundle.js"></script>
+</body>
+
+</html>
